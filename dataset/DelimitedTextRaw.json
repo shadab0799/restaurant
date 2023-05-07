@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "tabledata",
+				"fileName": "datafile",
 				"fileSystem": "raw"
 			},
 			"columnDelimiter": ",",
