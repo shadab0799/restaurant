@@ -25,7 +25,7 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "select id, name from t1 where age = @activity('age group of most customers').output.firstRow.age",
+							"value": "concat(\"select id, name from t1 where age =\",@activity('age group of most customers').output.firstRow.age)",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
