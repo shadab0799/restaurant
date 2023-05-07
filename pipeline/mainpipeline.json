@@ -24,7 +24,10 @@
 				"typeProperties": {
 					"source": {
 						"type": "AzureSqlSource",
-						"sqlReaderQuery": "select id, name from t1 where age>23",
+						"sqlReaderQuery": {
+							"value": "select id, name from t1 where age = @activity('age group of most customers').output.firstRow.age",
+							"type": "Expression"
+						},
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
