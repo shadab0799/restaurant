@@ -88,6 +88,12 @@
 				}
 			}
 		],
+		"parameters": {
+			"tablename": {
+				"type": "string",
+				"defaultValue": "t1"
+			}
+		},
 		"annotations": []
 	}
 }
