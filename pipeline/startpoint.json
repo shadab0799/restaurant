@@ -7,7 +7,7 @@
 				"type": "IfCondition",
 				"dependsOn": [
 					{
-						"activity": "checking if the bill more than 1000 exist",
+						"activity": "checking if the bill of more than 1000 Rs exist",
 						"dependencyConditions": [
 							"Completed"
 						]
@@ -16,12 +16,12 @@
 				"userProperties": [],
 				"typeProperties": {
 					"expression": {
-						"value": "@greater(activity('checking if the bill more than 1000 exist').output.firstRow.count,0)",
+						"value": "@greater(activity('checking if the bill of more than 1000 Rs exist').output.firstRow.count,0) ",
 						"type": "Expression"
 					},
 					"ifFalseActivities": [
 						{
-							"name": "Lookup1",
+							"name": "No need of any Action",
 							"type": "Lookup",
 							"dependsOn": [],
 							"policy": {
@@ -63,7 +63,7 @@
 				}
 			},
 			{
-				"name": "checking if the bill more than 1000 exist",
+				"name": "checking if the bill of more than 1000 Rs exist",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
