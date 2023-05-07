@@ -1,0 +1,9 @@
+{
+	"name": "SagarGaireADF",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a983308f-ee47-4882-99c5-523e3c609352",
+		"tenantId": "ae51117d-2838-4220-9037-5fac50e65f85"
+	}
+}
