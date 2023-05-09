@@ -65,7 +65,7 @@
 				}
 			},
 			{
-				"name": "Copy data1",
+				"name": "Copy data between time stamps",
 				"type": "Copy",
 				"dependsOn": [
 					{
@@ -87,7 +87,7 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "@concat('select * from t2 where modifiedDate > ',\nactivity('lookup-getting high watermark file').output.firstRow.Prop_0,\n' and modifiedDate < ',\nactivity('Fetch the latest time stamp from the database').output.firstRow.RecordDate)",
+							"value": "@concat('select * from t2 where modifiedDate > ''',activity('lookup-getting high watermark file').output.firstRow.Prop_0,\n''' and modifiedDate < ''',\nactivity('Fetch the latest time stamp from the database').output.firstRow.RecordDate,'''')",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
@@ -126,6 +126,22 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "copy- update high watermark file",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"enableStaging": false
+				}
 			}
 		],
 		"annotations": []
