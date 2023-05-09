@@ -1,5 +1,5 @@
 {
-	"name": "incremental load",
+	"name": "incremental data migration",
 	"properties": {
 		"annotations": []
 	}
