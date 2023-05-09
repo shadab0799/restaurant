@@ -87,7 +87,7 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "@concat('select * from t2 where modifiedDate > ',activity('lookup-getting high watermark file').output.firstRow,' and modifiedDate < ',activity('Fetch the latest time stamp from the database').output.firstRow)",
+							"value": "@concat('select * from t2 where modifiedDate > ',\nactivity('lookup-getting high watermark file').output.firstRow.Prop_0,\n' and modifiedDate < ',\nactivity('Fetch the latest time stamp from the database').output.firstRow.RecordDate)",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
