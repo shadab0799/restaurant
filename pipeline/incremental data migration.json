@@ -150,7 +150,7 @@
 					"source": {
 						"type": "AzureSqlSource",
 						"sqlReaderQuery": {
-							"value": "@concat('select ', activity('Fetch the latest time stamp from the database').output.firstRow.RecordDate,  ' from t1 where id = 1')",
+							"value": "@concat('select ''', activity('Fetch the latest time stamp from the database').output.firstRow.RecordDate,  ''' from t1 where id = 1')",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00",
