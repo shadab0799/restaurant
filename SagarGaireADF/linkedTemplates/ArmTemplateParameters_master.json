@@ -14,6 +14,9 @@
 		"AzureDataLakeStorage_properties_typeProperties_url": {
 			"value": "https://sagargaire.dfs.core.windows.net/"
 		},
+		"RestService1_properties_typeProperties_url": {
+			"value": "https://restcountries.com/v3.1/all"
+		},
 		"containerUri": {
 			"value": ""
 		},
