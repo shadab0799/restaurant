@@ -15,8 +15,9 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://prod-20.eastus.logic.azure.com:443/workflows/7bd552a4818449d2b9b57b5de92f2bc4/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=g-1P4kPosl3bjw39mDGWvk-wBp79PE9JToRwLtg4AVQ",
-					"method": "POST"
+					"url": "prod-20.eastus.logic.azure.com:443/workflows/7bd552a4818449d2b9b57b5de92f2bc4/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=g-1P4kPosl3bjw39mDGWvk-wBp79PE9JToRwLtg4AVQ",
+					"method": "POST",
+					"body": "a"
 				}
 			}
 		],
