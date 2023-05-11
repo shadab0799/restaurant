@@ -1,5 +1,5 @@
 {
-	"name": "incremental data migration",
+	"name": "incremental data transfer pipline",
 	"properties": {
 		"activities": [
 			{
