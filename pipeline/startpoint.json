@@ -7,7 +7,7 @@
 				"type": "IfCondition",
 				"dependsOn": [
 					{
-						"activity": "check if the bill of more than 1000 Rs exist",
+						"activity": "checking if the bill of more than 1000 Rs exist",
 						"dependencyConditions": [
 							"Completed"
 						]
@@ -63,7 +63,7 @@
 				}
 			},
 			{
-				"name": "check if the bill of more than 1000 Rs exist",
+				"name": "checking if the bill of more than 1000 Rs exist",
 				"type": "Lookup",
 				"dependsOn": [],
 				"policy": {
