@@ -1,1 +1,1 @@
-# restaurantal
+# restaurants
