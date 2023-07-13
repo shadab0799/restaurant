@@ -134,8 +134,30 @@
 					},
 					"firstRowOnly": false
 				}
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "pipelineReturnValue",
+					"setSystemVariable": true
+				}
 			}
 		],
+		"variables": {
+			"pipelinevariable": {
+				"type": "String"
+			},
+			"pipeline": {
+				"type": "Array"
+			}
+		},
 		"annotations": []
 	}
 }
