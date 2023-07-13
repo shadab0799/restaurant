@@ -1,0 +1,27 @@
+{
+	"name": "schedule",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "set variable with triggers",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"fname": "shadab"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 2,
+				"startTime": "2023-07-14T00:20:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}

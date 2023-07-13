@@ -1,0 +1,33 @@
+{
+	"name": "set variable with triggers",
+	"properties": {
+		"activities": [
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [],
+				"policy": {
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "fileType",
+					"value": "tt"
+				}
+			}
+		],
+		"parameters": {
+			"fname": {
+				"type": "string",
+				"defaultValue": "Dailyat"
+			}
+		},
+		"variables": {
+			"fileType": {
+				"type": "String"
+			}
+		},
+		"annotations": []
+	}
+}
